@@ -72,7 +72,7 @@ function add_empty_image_to_acr() {
 function install_kubectl() {
   if !(command -v kubectl >/dev/null); then
     kubectl_file="/usr/local/bin/kubectl"
-    sudo curl -L -s -o $kubectl_file https://storage.googleapis.com/kubernetes-release/release/v1.9.11/linux/amd64/kubectl
+    sudo curl -L -s -o $kubectl_file https://storage.googleapis.com/kubernetes-release/release/v1.9.11/bin/linux/amd64/kubectl
     sudo chmod +x $kubectl_file
   fi
 }
